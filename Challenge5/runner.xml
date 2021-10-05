@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="CASOS DE PRUEBA">
+    <!--Web Capabilites-->
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://www.phptravels.net/supplier"/>
+    <test name="Making Login in Web Page and ...">
+        <classes>
+            <class name="TestClass"/>
+        </classes>
+    </test>
+</suite>
