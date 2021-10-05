@@ -1,0 +1,18 @@
+a) Driver.findElements(By.id(“btn-1”)).get(3).click();
+    
+    Encuentra todos los elementos que tengan como id "btn-1",
+    selecciona el tercer elemento de la lista y realiza la acción de Click
+
+b) WebDriverWait wait = new WebDriverWait(driver 30);
+   wait.until(ExpectedConditions.visibilityOfElementLocated(By.name(“other-button”)));
+   driver.findElement(By.id(“last_name”)).sendKeys(“Hi”);
+    
+    Espera hasta un maximo de 30 segundos a que aparezca un elemento con atributo name = "other-button",
+    En caso de encontrar al elemento anteriormente descrito, encuentra un elemento cuyo id sea "last_name"
+    y le ingresa el texto "Hi"
+    Si no se encuentra el elemento con atributo name = "other-button", se lanza una excepcion de TimeOut
+
+c) Assert.assertTrue(false);
+
+    Es una validación(se asegura de que el valor que reciba sea verdadero), en este Caso se asegura de que
+    falso sea verdadero, como falso no es verdadero se lanza un AssertionError sin mensaje
